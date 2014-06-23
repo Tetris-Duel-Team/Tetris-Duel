@@ -2,12 +2,15 @@ Tetris Duel
 ===========
 Video with the game demo:
 
-Multiplayer Tetris for Raspberry Pi, written in bare metal ARM assembly.
-Can be assembled with our own assembler coded in C (binary provided), as we aimed for 100% only our code.
-Completed in 2 weeks as an extension of an Imperial College London first year project.
+Multiplayer Tetris for Raspberry Pi, written in bare metal ARM assembly
+
+Can be assembled with our own assembler coded in C (binary provided)
+
+Completed in 2 weeks as an extension of an Imperial College London first year project
+
 * 4000 lines of ARM Assembly
 * Driver for the NES controllers
-* Networking between Pis using custom protocol
+* Networking between Pis using a custom protocol
 * Own assembler (no linking)
 
 
