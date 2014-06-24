@@ -10,7 +10,7 @@ Our source code features:
 * Doubly buffered **rendering** logic for HDMI output
 * Custom ARMv6 assembler written from scratch in C (released as binary only)
 
-Watch our game demo here:
+Watch our game demo here: https://www.youtube.com/watch?v=hTqKRdcKZ9k&feature=youtu.be
 
 # Setup Guide
 ## Prerequisites
