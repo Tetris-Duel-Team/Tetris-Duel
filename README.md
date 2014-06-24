@@ -1,13 +1,14 @@
 # Tetris Duel
 
-A multiplayer Tetris game written in bare metal assembly for Raspberry Pi. This project is completed in 3 weeks as an extension to Imperial College London's first year computing project.
+A multiplayer Tetris game written in bare metal assembly for Raspberry Pi. This project was completed in 3 weeks (amidst exams and normal school work) as an extension to Imperial College London's first year computing project.
 
 Our source code features,
 
-* 4000 lines of documented ARM assembly code
-* Optimized driver for a NES controller connected via GPIO
-* Asynchronous networking for two Pis connected via GPIO
-* Doubly buffered rendering logic for HDMI output
+* **4000 lines of documented ARM assembly code**
+* **Optimized driver for a NES controller connected via GPIO**
+* **Asynchronous networking for two Pis connected via GPIO**
+* **Doubly buffered rendering logic for HDMI output**
+* **Custom ARMv6 assembler written from scatch in C**
 
 Watch our game demo here:
 
@@ -39,7 +40,7 @@ Watch our game demo here:
 
 2. Copy the generated `kernel.img` to your SD card, replacing existing file
 3. (Optional) Repeat step 1-3 on second Pi for multiplayer gameplay
-4. Follow the Hardware Setup Guide
+4. Before playing, ensure every component is wired correctly as described in Hardware Setup
 
 ## Hardware Setup
 ### NES Controller
@@ -90,9 +91,9 @@ Connect a second Pi running the same kernel using the following GPIO pins.
 
 # FAQ
 
-1. Where is tetrisToProcess.s?
+1. Where is `tetrisToProcess.s`?
 
-  We have removed our custom preprocessor (as described in our final report) from github release for a cleaner repository. tetris.s contains all code in tetrisToProcess.s with only variable names replaced by actual values.
+  We have removed our custom preprocessor (as described in our final report) from github release for a cleaner repository. `tetris.s` contains all code in `tetrisToProcess.s` with only variable names replaced by actual values.
 
 # Team
 
