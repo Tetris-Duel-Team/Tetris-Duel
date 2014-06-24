@@ -4,11 +4,11 @@ A multiplayer Tetris game written in bare metal assembly for Raspberry Pi. This 
 
 Our source code features,
 
-* **4000 lines of documented ARM assembly code**
-* **Optimized driver for a NES controller connected via GPIO**
-* **Asynchronous networking for two Pis connected via GPIO**
-* **Doubly buffered rendering logic for HDMI output**
-* **Custom ARMv6 assembler written from scatch in C**
+* 4000 lines of documented ARM assembly code
+* Optimized driver for a NES controller connected via GPIO
+* Asynchronous networking for two Pis connected via GPIO
+* Doubly buffered rendering logic for HDMI output
+* Custom ARMv6 assembler written from scatch in C (released as binary only)
 
 Watch our game demo here:
 
@@ -93,7 +93,11 @@ Connect a second Pi running the same kernel using the following GPIO pins.
 
 1. Where is `tetrisToProcess.s`?
 
-  We have removed our custom preprocessor (as described in our final report) from github release for a cleaner repository. `tetris.s` contains all code in `tetrisToProcess.s` with only variable names replaced by actual values.
+  We have removed our custom preprocessor (as described in our final report) from github release for a cleaner repository. `tetris.s` now contains all code in `tetrisToProcess.s` with only variable names replaced by actual values.
+
+2. Why do you have all the code in only one file?
+
+  We do understand the importance of writing modular code. However, as part of the requirement of our school project, we must assemble our entire game using our custom assembler which, due to time constraint, was not made to support generating ELF headers for linker scripts.
 
 # Team
 
