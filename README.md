@@ -10,7 +10,7 @@ Our source code features:
 * Doubly buffered **rendering** logic for HDMI output
 * Custom ARMv6 assembler written from scratch in C (released as binary only)
 
-Watch our game demo here: https://www.youtube.com/watch?v=hTqKRdcKZ9k&feature=youtu.be
+Watch our game demo here: http://youtu.be/hTqKRdcKZ9k
 
 # Setup Guide
 ## Prerequisites
@@ -47,6 +47,14 @@ Watch our game demo here: https://www.youtube.com/watch?v=hTqKRdcKZ9k&feature=yo
 
 Connect your NES controller to the GPIO pins as shown in the following table.
 
+| NES Controller Pin | GPIO Pin |
+|--------------------|----------|
+| Power              | 1        |
+| Latch              | 11       |
+| Clock              | 12       |
+| Data               | 13       |
+| Ground             | 14       |
+
 	          +----> Power  (white)
 	          |
 	  +---------+    
@@ -58,14 +66,6 @@ Connect your NES controller to the GPIO pins as shown in the following table.
 	    |  |  +----> Clock  (black)
 	    |  +-------> Latch  (yellow)
 	    +----------> Data   (green)
-
-| NES Controller Pin | GPIO Pin |
-|--------------------|----------|
-| Power              | 1        |
-| Latch              | 11       |
-| Clock              | 12       |
-| Data               | 13       |
-| Ground             | 14       |
 
 ![gpio header pins] (http://www.andremiller.net/wp-content/uploads/2013/01/RaspberryPiPinouts2.png)
 
