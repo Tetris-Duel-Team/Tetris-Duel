@@ -47,14 +47,14 @@ Watch our game demo here:
 
 Connect your NES controller to the GPIO pins as shown in the following table.
 
-	          +----> Power  (red)
+	          +----> Power  (white)
 	          |
 	  +---------+    
 	  | x  x  o   \     
 	  | o  o  o  o |    
 	  +------------+
 	    |  |  |  |
-	    |  |  |  +-> Ground (white)
+	    |  |  |  +-> Ground (red)
 	    |  |  +----> Clock  (black)
 	    |  +-------> Latch  (yellow)
 	    +----------> Data   (green)
