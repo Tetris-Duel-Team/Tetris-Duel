@@ -67,6 +67,8 @@ Connect your NES controller to the GPIO pins as shown in the following table.
 | Data               | 13       |
 | Ground             | 14       |
 
+![gpio header pins] (http://www.andremiller.net/wp-content/uploads/2013/01/RaspberryPiPinouts2.png)
+
 **Note:** latch, clock, and data pins should be connected using 260 ohm resistors as shown in our demo setup:
 
 ![NES controller](doc/NES\ controller.jpg)
