@@ -1,13 +1,13 @@
 # Tetris Duel
 
-A multiplayer Tetris game written in bare metal assembly for Raspberry Pi. The source code features
+A multiplayer Tetris game written in bare metal assembly for Raspberry Pi. This project is completed in 3 weeks as an extension to Imperial College London's first year computing project.
+
+Our source code features,
 
 * 4000 lines of documented ARM assembly code
 * Optimized driver for a NES controller connected via GPIO
 * Asynchronous networking for two Pis connected via GPIO
 * Doubly buffered rendering logic for HDMI output
-
-This project is completed in 3 weeks as an extension of Imperial College London first year computing project.
 
 Watch our game demo here:
 
@@ -68,7 +68,7 @@ Connect your NES controller to the GPIO pins as shown in the following table.
 
 **Note:** latch, clock, and data pins should be connected using 260 ohm resistors as shown in our demo setup:
 
-![NES controller](setup_images/NES\ controller.jpg)
+![NES controller](doc/NES\ controller.jpg)
 
 ### Networking (Multiplayer)
 
@@ -82,24 +82,29 @@ Connect a second Pi running the same kernel using the following GPIO pins.
 | Status out  | 22         | 18         | Status in   |
 | Game in     | 21         | 23         | Game out    |
 | Game out    | 23         | 21         | Game in     |
+| Ground      | 20         | 20         | Ground      |
 
-Also, remember about connecting grounds of the two Pis to each other
+**Note:** All pins (except ground) should be connected using 10k ohm resistors as shown in our demo setup:
 
-All the pins should not be directly connected (except ground pins) - use 10k ohm resistors as visible here:
-
-![Networking](setup_images/Networking\ and\ controllers.jpg)
+![Networking](doc/Networking\ and\ controllers.jpg)
 
 # FAQ
-1. Where is tetrisToProcess.s
-2. all code now available in tetris.s (not tetrisToProcess.s as stated in Report - we removed our custom prepocessor for ease of use)
+
+1. Where is tetrisToProcess.s?
+
+  We have removed our custom preprocessor (as described in our final report) from github release for a cleaner repository. tetris.s contains all code in tetrisToProcess.s with only variable names replaced by actual values.
 
 # Team
 
-* Piotr Chabierski:	Github - [@piotrchabierski](https://github.com/piotrchabierski)
-* Han Qiao: 		Github - [@sweatybridge](https://github.com/sweatybridge)
-* Michał Sienkiewicz:	GitHub - [@michsien](https://github.com/michsien)
-* Utsav Tiwary:		GitHub - [@utsavtiwary](https://github.com/utsavtiwary)
+* Han Qiao
+  * Github - [@sweatybridge](https://github.com/sweatybridge)
+* Piotr Chabierski
+  * Github - [@piotrchabierski](https://github.com/piotrchabierski)
+* Michał Sienkiewicz
+  * GitHub - [@michsien](https://github.com/michsien)
+* Utsav Tiwary
+  * GitHub - [@utsavtiwary](https://github.com/utsavtiwary)
 
 # Acknowledgement
 
-This is a first year university project not intended for commercial use. The tile images were taken from Tetris Battle, which also inspired our game logic.
+This is a university project intended for educational purposes and not for commercial use. The tile images were taken from Tetris Battle, which also inspired our game logic.
