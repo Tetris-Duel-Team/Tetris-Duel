@@ -5,9 +5,9 @@ A multiplayer Tetris game written in bare metal assembly for Raspberry Pi. This 
 Our source code features,
 
 * 4000 lines of documented ARM assembly code
-* Optimized driver for a NES controller connected via GPIO
-* Asynchronous networking for two Pis connected via GPIO
-* Doubly buffered rendering logic for HDMI output
+* Optimized driver for a **NES controller** connected via GPIO
+* Asynchronous **networking** for two Pis connected via GPIO
+* Doubly buffered **rendering** logic for HDMI output
 * Custom ARMv6 assembler written from scatch in C (released as binary only)
 
 Watch our game demo here:
@@ -85,7 +85,7 @@ Connect a second Pi running the same kernel using the following GPIO pins.
 | Game out    | 23         | 21         | Game in     |
 | Ground      | 20         | 20         | Ground      |
 
-**Note:** All pins (except ground) should be connected using 10k ohm resistors as shown in our demo setup:
+**Note:** all pins (except ground) should be connected using 10k ohm resistors as shown in our demo setup:
 
 ![Networking](doc/Networking\ and\ controllers.jpg)
 
@@ -98,6 +98,7 @@ Connect a second Pi running the same kernel using the following GPIO pins.
 2. Why do you have all the code in only one file?
 
   We do understand the importance of writing modular code. However, as part of the requirement of our school project, we must assemble our entire game using our custom assembler which, due to time constraint, was not made to support generating ELF headers for linker scripts.
+  That said, we have taken great care to separate our code into different sections within the file using comments and we have also refactored as many reusable routines as we can.
 
 # Team
 
