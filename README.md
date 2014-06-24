@@ -2,13 +2,13 @@
 
 A multiplayer Tetris game written in bare metal assembly for Raspberry Pi. This project was completed in 3 weeks (amidst exams and normal school work) as an extension to Imperial College London's first year computing project.
 
-Our source code features,
+Our source code features:
 
 * 4000 lines of documented ARM assembly code
 * Optimized driver for a **NES controller** connected via GPIO
 * Asynchronous **networking** for two Pis connected via GPIO
 * Doubly buffered **rendering** logic for HDMI output
-* Custom ARMv6 assembler written from scatch in C (released as binary only)
+* Custom ARMv6 assembler written from scratch in C (released as binary only)
 
 Watch our game demo here:
 
@@ -47,17 +47,17 @@ Watch our game demo here:
 
 Connect your NES controller to the GPIO pins as shown in the following table.
 
-	          +----> Power  (white)
+	          +----> Power  (red)
 	          |
-	5 +---------+  7    
+	  +---------+    
 	  | x  x  o   \     
 	  | o  o  o  o |    
-	4 +------------+ 1  
+	  +------------+
 	    |  |  |  |
-	    |  |  |  +-> Ground (brown)
-	    |  |  +----> Clock  (red)
-	    |  +-------> Latch  (orange)
-	    +----------> Data   (yellow)
+	    |  |  |  +-> Ground (white)
+	    |  |  +----> Clock  (black)
+	    |  +-------> Latch  (yellow)
+	    +----------> Data   (green)
 
 | NES Controller Pin | GPIO Pin |
 |--------------------|----------|
@@ -98,17 +98,22 @@ Connect a second Pi running the same kernel using the following GPIO pins.
 2. Why do you have all the code in only one file?
 
   We do understand the importance of writing modular code. However, as part of the requirement of our school project, we must assemble our entire game using our custom assembler which, due to time constraint, was not made to support generating ELF headers for linker scripts.
+
   That said, we have taken great care to separate our code into different sections within the file using comments and we have also refactored as many reusable routines as we can.
 
 # Team
 
 * Han Qiao
+  * Email - qiao.han13@imperial.ac.uk
   * Github - [@sweatybridge](https://github.com/sweatybridge)
 * Piotr Chabierski
+  * Email - piotr.chabierski13@imperial.ac.uk
   * Github - [@piotrchabierski](https://github.com/piotrchabierski)
 * Michał Sienkiewicz
+  * Email - michal.sienkiewicz13@imperial.ac.uk
   * GitHub - [@michsien](https://github.com/michsien)
 * Utsav Tiwary
+  * Email - utsav.tiwary13@imperial.ac.uk
   * GitHub - [@utsavtiwary](https://github.com/utsavtiwary)
 
 # Acknowledgement
