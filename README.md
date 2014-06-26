@@ -10,7 +10,7 @@ Our source code features:
 * Rendering logic for HDMI output with **double buffering**
 * Custom ARMv6 assembler written from scratch in C (released as binary only)
 
-We completed this project in 3 weeks, amidst exams and normal school work, as an extension to Imperial College London's first year computing project.
+We completed this project in 3 weeks, amidst exams and normal school work, as an **extension to Imperial College London's first year computing project**.
 
 # Setup Guide
 ## Prerequisites
