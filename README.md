@@ -1,13 +1,13 @@
 # Tetris Duel
 
-A multiplayer Tetris game written in bare metal assembly for Raspberry Pi. This project was completed in 3 weeks (amidst exams and normal school work) as an extension to Imperial College London's first year computing project.
+As an experiment on basic game networking in bare metal assembly, we created a multiplayer Tetris game for Raspberry Pi. This project was completed in 3 weeks, amidst exams and normal school work, as an extension to Imperial College London's first year computing project.
 
 Our source code features:
 
 * 4000 lines of documented ARM assembly code
-* Optimized driver for a **NES controller** connected via GPIO
 * Asynchronous **networking** for two Pis connected via GPIO
-* Doubly buffered **rendering** logic for HDMI output
+* Optimized driver (60 μs duty cycle) for a single **NES controller**
+* Rendering logic for HDMI output with **double buffering**
 * Custom ARMv6 assembler written from scratch in C (released as binary only)
 
 Watch our game demo here: http://youtu.be/hTqKRdcKZ9k
