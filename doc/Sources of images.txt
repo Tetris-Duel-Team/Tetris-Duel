@@ -1,0 +1,3 @@
+NES controller.jpg - own picture
+Networking and controllers.jpg - own picture
+gpio_header.png - http://www.andremiller.net/wp-content/uploads/2013/01/RaspberryPiPinouts2.png
