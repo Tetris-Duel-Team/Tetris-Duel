@@ -21,7 +21,7 @@ We completed this project in 3 weeks, amidst exams and normal school work, as an
 3. 260 ohm resistors x3
 5. Breadboard x1
 4. NES controller x1
-6. Raspberry Pi, SD card, power cable x1
+6. Raspberry Pi rev 2, SD card, power cable x1
 7. Screen and HDMI cable x1
 
 ### Multiplayer
