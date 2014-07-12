@@ -34,13 +34,19 @@ We completed this project in 3 weeks, amidst exams and normal school work, as an
 ## Software Setup
 
 1. Format your SD card with [Raspbian OS](http://www.raspberrypi.org/downloads/) following the [image installation guide](http://www.raspberrypi.org/documentation/installation/installing-images/README.md)
-1. Assemble the game with the provided assembler (or the [official ARM assembler](https://launchpad.net/gcc-arm-embedded))
+2. Assemble the game with the provided assembler (or the [official ARM assembler](https://launchpad.net/gcc-arm-embedded))
+	
+	on mac:
 
-		./assemble tetris.s kernel.img
+		./assemble_mac tetris.s kernel.img
 
-2. Copy the generated `kernel.img` to your SD card, replacing existing file
-3. (Optional) Repeat step 1-3 on second Pi for multiplayer gameplay
-4. Before playing, ensure every component is wired correctly as described in Hardware Setup
+	on linux:
+
+		./assemble_linux tetris.s kernel.img
+
+3. Copy the generated `kernel.img` to your SD card, replacing existing file
+4. (Optional) Repeat step 1-3 on second Pi for multiplayer gameplay
+5. Before playing, ensure every component is wired correctly as described in Hardware Setup
 
 ## Hardware Setup
 ### NES Controller
