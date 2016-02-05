@@ -1,5 +1,7 @@
 # Tetris Duel
 
+*Note: This project has never been tested with the new Raspberry Pi 2.*
+
 As an experiment on basic game networking in bare metal assembly, we created a multiplayer Tetris game for Raspberry Pi. Watch our game demo here: http://youtu.be/hTqKRdcKZ9k
 
 Our source code features:
